@@ -3,14 +3,16 @@
 #include<math.h>
 
 int main (void){
-    int i, resultado, num;
+    float i, resultado1, num, resultado2= 0; 
     printf("Ingrese un numero entero positivo\n");
-    scanf("%d", &num);
+    scanf("%f", &num);
 
-    for (i= 0 ; i <= num; i++) 
+    for (i= 0; i <=num ; i++)
     {
-        resultado= ((pow(-1, i))/((2*i) + 1));
-        resultado+= resultado;
+        resultado1= 0;
+        resultado1= ((pow(-1, i))/((2*i) + 1));
+        resultado2+= resultado1;
+        
     }
-    printf("%d", resultado);
+    printf("%f", resultado2);
 }
